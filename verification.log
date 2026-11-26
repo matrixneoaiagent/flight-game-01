@@ -1,0 +1,36 @@
+PASS  title screen is shown on load
+PASS  title lists throttle, pitch, roll, yaw, brake and pause
+PASS  WebGL canvas renders a non-blank image  — {"unique":139,"mean":163,"std":33}
+PASS  title frame is a substantial render  — 719558 bytes
+PASS  start button begins the flight  — {"screen":"play","view":"chase","paused":false,"altitudeFt":560,"speedKt":212,"heading":0,"throttle":72,"ringsPassed":0,"timeLeft":179.7750000000002,"phase":"flying","bankDeg":0,"brake":false,"clearanceFt":516}
+PASS  W raises throttle and the HUD value changes  — 72% -> 100%
+PASS  HUD telemetry text changes after a key press  — ALT 570 FT | SPD 266 KT | HDG 0 | THR 100% | RINGS 0/5 | TIME 02:59
+PASS  pitch input changes altitude in the HUD  — 570 ft -> 727 ft
+PASS  D rolls and turns the aircraft  — bank -65°, heading 0 -> 18
+PASS  E yaw changes the heading  — 18° -> 51°
+PASS  Space engages the airbrake without resetting the flight  — clock 176.3 -> 176.2
+PASS  mouse steering changes bank/heading  — bank -74°, heading 57 -> 82
+PASS  HUD canvas has visible drawn content  — 986 painted sample pixels
+PASS  P pauses the flight and shows the pause panel
+PASS  P resumes the flight
+PASS  C switches to the cockpit view
+PASS  C switches back to chase view
+PASS  gate 1 crossing registers  — rings 1/5
+PASS  gate 2 crossing registers  — rings 2/5
+PASS  gate 3 crossing registers  — rings 3/5
+PASS  gate 4 crossing registers  — rings 4/5
+PASS  gate 5 crossing registers  — rings 5/5
+PASS  all five gates lead to the win screen  — COURSE COMPLETE
+PASS  winning time is saved locally  — 10.57500000000004
+PASS  restart resets gates and timer  — {"screen":"play","view":"chase","paused":false,"altitudeFt":562,"speedKt":220,"heading":0,"throttle":72,"ringsPassed":0,"timeLeft":179.5500000000004,"phase":"flying","bankDeg":0,"brake":false,"clearanceFt":519}
+PASS  terrain impact ends in the crash screen  — THE REEF WINS
+PASS  course clock expiry ends in the timeout screen  — OUT OF TIME
+PASS  render loop is active at 1280x800  — 8.3 fps (SwiftShader software fallback; hardware uses full quality)
+PASS  game is back in a playable state after all paths  — {"screen":"play","view":"chase","paused":false,"altitudeFt":590,"speedKt":270,"heading":0,"throttle":72,"ringsPassed":0,"timeLeft":176.9250000000028,"phase":"flying","bankDeg":0,"brake":false,"clearanceFt":526}
+PASS  render changes over time  — eae28b480b4a -> 4ccf5cc28751
+PASS  no network request leaves localhost  — all 12 requests local
+PASS  no HTTP failures  — none
+PASS  no JavaScript console errors  — none
+
+Verification: 33/33 checks passed.
+Requests observed: 12 (localhost)
